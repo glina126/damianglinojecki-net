@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Damian Glinojecki</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-  
-  <link rel="stylesheet" type="text/css" href="custom_styles.css" />
-
-</head> <!-- end of head -->
+    <head>
+      <title>Damian Glinojecki</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+          
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="custom_styles.css" />
+        <link rel="stylesheet" type="text/css" href="animate_css.css" />
+        <head>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="viewportchecker.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                $('.visible-fadeIn').viewportChecker({
+                    classToAdd: 'visible animated fadeIn',
+                    offset: 40
+                });
+            });
+        </script>
+    </head>
 
 <header>
-
   <!-- navbar -->
   <nav class="navbar navbar-default ">
     <div class="container">
@@ -44,12 +57,29 @@
 
 <body class="background-color: #fff">
   
+  <div class="container">
+    <div class= "row">
+      <div class="col-md-12">
+        <img class="img-rounded img-responsive visible-fadeIn" src="images/lasercnc.png" width="100%" alt="...">
+      </div>
+      <div class="col-md-12">
+        <img class="img-rounded img-responsive visible-fadeIn" src="images/qmbt_big_hq.png" width="100%" alt="...">
+      </div>
+      <div class="col-md-12">
+        <img class="img-rounded img-responsive visible-fadeIn" src="images/qmbt_big_hq.png" width="100%" alt="...">
+      </div>
+      <div class="col-md-12">
+        <img class="img-rounded img-responsive visible-fadeIn" src="images/microbit328.png" width="100%" alt="...">
+      </div>
+    </div>
+  </div>
+  
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 bgimage">
         
         <!-- jumbotron -->
-        <div class="container">
+        <div class="container-fluid">
           <div class="jumbotron">
             <h1 class="text-centered">Damian Glinojecki <small><small>BA in computer science</small></small></h1>
             <br>
