@@ -55,3 +55,27 @@ margin: 0 auto;
     height: 350px;
     color:gray;
 }
+
+.jumbotron-qmbt-small {
+    background-image: url("../images/qmbt_small.jpg");
+    background-size: cover;
+    background-position: 50% 60%; 
+    height: 350px;
+    color:gray;
+}
+
+.jumbotron-microbit328 {
+    background-image: url("../images/microbit328.jpg");
+    background-size: cover;
+    background-position: 50% 60%; 
+    height: 350px;
+    color:gray;
+}
+
+.jumbotron-other-projects {
+    background-image: url("../images/other_projects.jpg");
+    background-size: cover;
+    background-position: 50% 60%; 
+    height: 350px;
+    color:gray;
+}
