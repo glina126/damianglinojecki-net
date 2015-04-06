@@ -32,3 +32,26 @@ margin: 0 auto;
 .visible{
 	opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .affix {
+        position: static;
+    }
+}
+
+
+.jumbotron-laserCNC {
+    background-image: url("../images/lasercnc.jpg");
+    background-size: cover;
+    background-position: 50% 60%; 
+    height: 350px;
+    color:gray;
+}
+
+.jumbotron-qmbt-big {
+    background-image: url("../images/qmbt_big_hq.jpg");
+    background-size: cover;
+    background-position: 50% 60%; 
+    height: 350px;
+    color:gray;
+}
