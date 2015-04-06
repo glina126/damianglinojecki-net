@@ -24,3 +24,11 @@ margin: 0 auto;
     background-size: 100% 100%;
     background-repeat:no-repeat;
 }
+
+.hidden{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1;
+}
