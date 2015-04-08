@@ -59,7 +59,7 @@ margin: 0 auto;
 .jumbotron-qmbt-small {
     background-image: url("../images/qmbt_small.jpg");
     background-size: cover;
-    background-position: 50% 60%; 
+    background-position: 50% 50%; 
     height: 350px;
     color:gray;
 }
@@ -67,7 +67,7 @@ margin: 0 auto;
 .jumbotron-microbit328 {
     background-image: url("../images/microbit328.jpg");
     background-size: cover;
-    background-position: 50% 60%; 
+    background-position: 50% 30%; 
     height: 350px;
     color:gray;
 }
