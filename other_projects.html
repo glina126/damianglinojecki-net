@@ -101,8 +101,20 @@
                 <div class="col-md-9">
                     <h2 class="visible-fadeIn" id="section-1">Bluetooth RGB LED Strip</h2>
                     <video class="visible-fadeIn" id="sampleMovie" src="https://zippy.gfycat.com/ShinyRichCatfish.webm" autoplay loop width="100%"></video>
-                    <p class="visible-fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
-                    <p class="visible-fadeIn">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+                    <br><br>
+                    <p class="visible-fadeIn">I always wanted to have a LED strip above my desk for when i work on my projects or do school work. I tend to do most of my projects on paper first or on a white board, non the less, whenever you write on paper you get shadows, this was annoying. So, in order to eliminate the shadows I came up with the idea of a LED strip above my desk. Just a simple white LED strip was too simple, so I decided to go with a white strip and an RGB LED strip. Why both? more light and more of a pure white light. It is hard to mix the RGB leds to a good white color and besides, one strip is too dim. The combination of the two makes it a perfect work and study environment.</p>
+                    pic of the hardware
+                    <p class="visible-fadeIn">The circuit and code is simple. I have an Arduino pro mini soldered onto a custom home etched PCB, a few transistors on the PCB itself and a breakout connection for a bluetooth module. This enables me to control any of the colors precisely and wirelessly form practically any device.</p>
+                    <p class="visible-fadeIn">The code for this project was simple. the Arduino checks the bluetooth buffer and processes it whenever there is something available. The processing application then connects to the HC-05 bluetooth module via serial communication and then sends the WRGB values over on color change. This mechanism works without flaws. I kept the baund rate down to 9600bps thus the refresh rate is slow, but sufficient for this purpose. After all this was a quick and dirty project.</p>
+                    <div class="row">
+                      <div class="col-sm-1"></div>
+                      <div class="col-sm-3">
+                        <li>Bluetooth</li>
+                        <li>Custom PCB</li>
+                        <li>PC APP</li>
+                        <li>Roughly 7 hours to complete</li>
+                      </div>
+                    </div>
                     <hr>
                     <h2 class="visible-fadeIn" id="section-2">Section Two</h2>
                     <p class="visible-fadeIn">Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus. Suspendisse ultrices placerat accumsan. Mauris quis dapibus orci. In dapibus velit blandit pharetra tincidunt. Quisque non sapien nec lacus condimentum facilisis ut iaculis enim. Sed viverra interdum bibendum. Donec ac sollicitudin dolor. Sed fringilla vitae lacus at rutrum. Phasellus congue vestibulum ligula sed consequat.</p>
