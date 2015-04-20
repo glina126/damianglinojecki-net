@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Damian Glinojecki</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+          
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="custom_styles.css" />
+        <link rel="stylesheet" type="text/css" href="animate_css.css" />
+        <head>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="viewportchecker.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                $('.visible-fadeIn').css("opacity","0").viewportChecker({
+                    classToAdd: 'visible animated fadeIn',
+                    offset: 100
+                });
+            });
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#ScrollerSpy">
+        <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-default ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">D.G.</a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="/laserCNC.html">
+                    LaserCNC <br>
+                    <img class="img-thumbnail" src="images/lasercnc.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/qmbt_big.html">
+                    QMBT BIG <br>
+                    <img class="img-thumbnail" src="images/qmbt_big_hq.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/qmbt_small.html">
+                    QMBT <small>small</small> <br>
+                    <img class="img-thumbnail" src="images/qmbt_small.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/ammr.html">
+                    AMMR <br>
+                    <img class="img-thumbnail" src="images/AMRR_train.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/microbit328.html">
+                    MicroBit<small>328</small> <br>
+                    <img class="img-thumbnail" src="images/microbit328.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/other_projects.html">
+                    Smaller Projects <br>
+                    <img class="img-thumbnail" src="images/other_projects.jpg" width="100%">
+                  </a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/glina126">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/DamianGlinojecki">LinkedIn</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<img class="img-responsive img-rounded" src="images/damian_glinojecki.jpg" width="100%">
+						</div>
+					</div>	
+                    <h2 class="visible-fadeIn">Damian Glinojecki</h2>
+					<p class="visible-fadeIn">I am studying computer science at Hunter college. I have a big passion for embedded systems and I love to do projects that involve microcontrollers. I design and make my own printed circuit boards and write my own software. I am very comfortable working KiCad, from creating my own footprints to laying out the PCB.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+</html>       
