@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Damian Glinojecki</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+          
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="custom_styles.css" />
+        <link rel="stylesheet" type="text/css" href="animate_css.css" />
+        <head>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="viewportchecker.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                $('.visible-fadeIn').css("opacity","0").viewportChecker({
+                    classToAdd: 'visible animated fadeIn',
+                    offset: 100
+                });
+            });
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#ScrollerSpy">
+      <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-default ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">D.G.</a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="/laserCNC.html">
+                    LaserCNC <br>
+                    <img class="img-thumbnail" src="images/lasercnc.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/qmbt_big.html">
+                    QMBT BIG <br>
+                    <img class="img-thumbnail" src="images/qmbt_big_hq.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/qmbt_small.html">
+                    QMBT <small>small</small> <br>
+                    <img class="img-thumbnail" src="images/qmbt_small.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/amrr.html">
+                    AMMR <br>
+                    <img class="img-thumbnail" src="images/AMRR_train.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/under_construction.html">
+                    MicroBit<small>328</small> <br>
+                    <img class="img-thumbnail" src="images/microbit328.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/other_projects.html">
+                    Smaller Projects <br>
+                    <img class="img-thumbnail" src="images/other_projects.jpg" width="100%">
+                  </a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/glina126">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/DamianGlinojecki">LinkedIn</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+        <div class="jumbotron jumbotron-amrr">
+            <div class="container">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" id="ScrollerSpy">
+                    <ul class="nav nav-tabs nav-stacked affix-top" data-spy="affix">
+                        <li class="active"><a href="#introduction">Introduction</a></li>
+                        <li><a href="#hardware">Hardware Overview</a></li>
+                        <li><a href="#standardization">Standardization</a></li>
+                        <li><a href="#wcn">Whats coming next</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <h2 class="visible-fadeIn" id="introduction">Introduction</h2>
+                    <p class="visible-fadeIn">Automatization is beautiful. Seeing your creation come to life is even more beautiful. This project is exactly about that, automatization of the model railroad.</p>
+                    <p class="visible-fadeIn">This is just the beginning of a long yet beautiful journey. This project has many goals ahead, but once the goals will be reached, it will shine like a bright star on a dark sky.</p>
+                    <h4 class="visible-fadeIn">Here are some of the goals:</h4>
+                    <ul class="visible-fadeIn">
+                        <li>Computer map - display a map of the railroad with trains mapped as they move along</li>
+                        <li>Automatization - schedule trains and let the computer take care of running them while avoiding collisions</li>
+                        <li>Auto train scheduling - let the computer take care of everything, including scheduling, routing and runnning trains</li>
+                        <li>Human interaction - let the user pick a train to manually control and make the computer adjust all other traffic accordingly</li>
+                    </ul>
+                    <p class="visible-fadeIn">Given the goals, the project has a very long future. This is a project that will easily take a year to complete. The initial goal might be complete within about 2 months, but it is still very big. There is a lot that goes into the first goal and it has to foresee the future.</p>
+                    <h4 class="visible-fadeIn">How it all comes together</h3>
+                    <p class="visible-fadeIn">This is an important aspect of the project. There have been defined standards that are meant to provide expandability, ease of use, cost efficiency, and neater programming.</p>
+                    <h2 class="visible-fadeIn" id="hardware">Hardware Overview</h2>
+                    <p class="visible-fadeIn">The hardware is complicated. The PCB layout is easy but the interconnection network is very complex. Even on a simple layout there will be a few microcontrollers.</p>
+                    <h4 class="visible-fadeIn">The Node</h4>
+                    <p class="visible-fadeIn">A node in the system has 2 uses. It controlls the servos which are used to swich tracks and it serves as a block detector. This node is connected to a master microcontroller via I2C and the master is connceted to a PC via serial communication. The master reads all the nodes in the system as fast as it can and informs the PC of the current status of the blocks. The node has a maximum of two detection blocks connected to it and it reads them all the time. When a change is detected it is stored in the RAM. Once the master requests the information, it is sent over to it. The node is one of the more complicated structures of the automatization system.</p>
+                    <h4 class="visible-fadeIn">The Master</h4>
+                    <p class="visible-fadeIn">Master serves a purpose of communcating with the PC via serial communication. It tells the PC everything about the system as fast as it possibly can. (most likely at 115200bps) This enables the PC to know everything about every node, detection block and servo in the system and allows for heavy computation to be left to a bigger CPU. The PC serves a role of a controller, i.e the brains of the system. Routing trains and keeping track of everything will require a lot of memory and CPU, thus a microcontroller is not ideal to serve this purpose.</p>
+                    <h4 class="visible-fadeIn">Detection Block</h4>
+                    <p class="visible-fadeIn">This is the simplest hardware of it all. It is based on a photoresistor and a voltage divider circuit. It is read by node and it detects if a train is over the block or not.</p>
+                    <hr>
+                    <h2 class="visible-fadeIn" id="standardization">Standards</h2>
+                    <p class="visible-fadeIn">Standards are very important in a project like this. They are essential since they keep everything neat. They make programming easier, more light weigtht and they help organize the wiring.</p>
+                    <h3 class="visible-fadeIn">Detector and Semaphore placement</h3>
+                    <p class="visible-fadeIn">It is essential to keep everything consistent. Thus I have came up with a neat solution to keeping everything compatible, standardized and yet simple.</p>
+                    <h4 class="visible-fadeIn">Straight Track</h4>
+                    <img class="img-responsive img-rounded visible-fadeIn" src="images/amrr/straight_standard.svg" width="100%">
+                    <br>
+                    <hr>
+                    <h4 class="visible-fadeIn">Left-Left Switch</h4>
+                    <img class="img-responsive img-rounded visible-fadeIn" src="images/amrr/left_left_switch.svg" width="100%">
+                    <br>
+                    <hr>
+                    <h4 class="visible-fadeIn">Left-Right Switch</h4>
+                    <img class="img-responsive img-rounded visible-fadeIn" src="images/amrr/left_right_switch.svg" width="100%">
+                    <br>
+                    <hr>
+                    <h4 class="visible-fadeIn">Right-Left Switch</h4>
+                    <img class="img-responsive img-rounded visible-fadeIn" src="images/amrr/right_left_switch.svg" width="100%">
+                    <br>
+                    <hr>
+                    <h4 class="visible-fadeIn">Right-Right Switch</h4>
+                    <img class="img-responsive img-rounded visible-fadeIn" src="images/amrr/right_right_switch.svg" width="100%">
+                    <br>
+                    <p>Taking these puzzles if you will, you can build almost any layout you dream of. The only piece that is is missing is the track crossing track. This will come soon. As to a Y switch, it can be seen as any of the above given it is facing the right side. Also, with the Left-X switches you have to take note that there must be a straight track layed after it, otherwise you could not route trains using this switch.</p>
+                    <h4>Sample layout</h4>
+                    <a href="images/amrr/sample_layout.jpg" >
+                    <img class="img-responsive img-rounded visible-fadeIn" src="images/amrr/sample_layout.jpg" width="100%">
+                    </a>
+                    <br>
+                    <p>This layout consists of 8 Nodes and 17 block detectors. This is a small layout made just as an example of the compability of the framework. Note: Turns can be seen as a straight line track.</p>
+                    <hr>
+                    <h2 class="visible-fadeIn" id="wcn">Whats coming next</h2>
+                    <p>Currently I am testing the nodes and writing software for them. This software has to be future proof as the nodes are going to be burried and not looked at again. Once the testing is done, a permanent installation will take place on the current layout. I am excited to get the prototype working and I will do an update with a video to show the progress.</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+</html>                           
