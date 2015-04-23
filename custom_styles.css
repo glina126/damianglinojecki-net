@@ -79,3 +79,11 @@ margin: 0 auto;
     height: 350px;
     color:gray;
 }
+
+.jumbotron-amrr {
+    background-image: url("../images/AMRR_train.jpg");
+    background-size: cover;
+    background-position: 50% 60%; 
+    height: 350px;
+    color:gray;
+}
