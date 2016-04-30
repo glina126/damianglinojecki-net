@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Damian Glinojecki</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="Damians VW MIBI hacking page">
+      <meta name="author" content="Damian Glinojecki">
+    	<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="custom_styles.css" />
+        <link rel="stylesheet" type="text/css" href="animate_css.css" />
+        <script src="viewportchecker.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.visible-fadeIn').css("opacity","0").viewportChecker({
+                    classToAdd: 'visible animated fadeIn',
+                    offset: 100
+                });
+            });
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-62007869-2']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#ScrollerSpy">
+      <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-default ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">D.G.</a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="/laserCNC.html">
+                    LaserCNC <br>
+                    <img class="img-thumbnail" src="images/lasercnc.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/qmbt_big.html">
+                    QMBT BIG <br>
+                    <img class="img-thumbnail" src="images/qmbt_big_hq.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/qmbt_small.html">
+                    QMBT <small>small</small> <br>
+                    <img class="img-thumbnail" src="images/qmbt_small.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/amrr.html">
+                    AMMR <br>
+                    <img class="img-thumbnail" src="images/AMRR_train.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/under_construction.html">
+                    MicroBit<small>328</small> <br>
+                    <img class="img-thumbnail" src="images/microbit328.jpg" width="100%">
+                  </a></li>
+                  <li  class="text-center"><a href="/other_projects.html">
+                    Smaller Projects <br>
+                    <img class="img-thumbnail" src="images/other_projects.jpg" width="100%">
+                  </a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/glina126">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/DamianGlinojecki">LinkedIn</a></li>
+              <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- END navbar -->
+
+    </header>
+        <div class="jumbotron jumbotron-other-projects">
+            <div class="container">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" id="ScrollerSpy">
+                    <ul class="nav nav-tabs nav-stacked affix-top" data-spy="affix">
+                        <li class="active"><a href="#overview">Overview</a></li>
+                        <li><a href="#The_Map">The Map</a></li>
+                        <li><a href="#section-3">Section Three</a></li>
+                        <li><a href="#section-4">Section Four</a></li>
+                        <li><a href="#section-5">Section Five</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <h2 class="visible-fadeIn" id="overview">Overview of the Project</h2>
+                    <img class="img-rounded img-responsive visible-fadeIn" src="images/VW_MIBI/system.png" width="100%" alt="image of the infotainment system">
+                    <br>
+                    <br>
+                    <h3 class="visible-fadeIn">You do not own a device, unless you know what drives it.</h3>
+                    <br>
+                    <p class="visible-fadeIn">The idea of hacking cars in the recent days, has been getting a lot of traction from hackers/makers and professionals alike. Dead fish go with the flow, but if it drives them -- that is exactly what they should do. </p>
+                    <p class="visible-fadeIn">In this project, I will be attempting at reverse engineering and hacking the MIB I platform from a 2015 VW GTI.</p>
+                    <hr>
+
+                    <!-- MAP -->
+                    <h2 class="visible-fadeIn" id="The_Map">The Map</h2>
+                    <img class="img-rounded visible-fadeIn" width="841" height="819" src="images/VW_MIBI/PCB_top.png"  alt="image of the top PCB" usemap="#device_map_front">
+                    <map name="device_map_front">
+                        <area shape="rect" coords="96,110,209,193"  href="#bluetooth_module"    alt="Bluetooth module">
+                        <area shape="rect" coords="217,223,265,270" href="#lc4064v5tn-75"       alt="lc4064v5tn-75">
+                        <area shape="rect" coords="411,212,486,306" href="#bluetooth_module2"   alt="Bluetooth module">
+                        <area shape="rect" coords="578,257,650,510" href="#bluetooth_module3"   alt="Bluetooth module">
+                        <area shape="rect" coords="440,330,560,440" href="#R8A77770"            alt="R8A77770">
+                        <area shape="rect" coords="120,360,160,400" href="#bluetooth_module5"   alt="Bluetooth module">
+                        <area shape="rect" coords="220,380,330,480" href="#bluetooth_module6"   alt="Bluetooth module">
+                        <area shape="rect" coords="380,440,430,482" href="#bluetooth_module7"   alt="Bluetooth module">
+                        <area shape="rect" coords="130,490,170,530" href="#bluetooth_module8"   alt="Bluetooth module">
+                        <area shape="rect" coords="460,510,500,560" href="#bluetooth_module9"   alt="Bluetooth module">
+                        <area shape="rect" coords="550,512,590,550" href="#bluetooth_module10"  alt="Bluetooth module">
+                        <area shape="rect" coords="360,670,420,730" href="#bluetooth_module11"  alt="Bluetooth module">
+                        <area shape="rect" coords="462,0,580,70"    href="#bluetooth_module12"  alt="Bluetooth module">
+                        <area shape="rect" coords="680,30,760,80"   href="#bluetooth_module13"  alt="Bluetooth module">
+                    </map>
+
+                    <!-- Components list -->
+                    <h2 class="visible-fadeIn" id="components_list">Components List</h2>
+                    <p>Components list</p>
+                    <br>
+                    <br>
+
+                    <!-- Bluetooth module -->
+                    <div class="row">
+                        <h2 class="visible-fadeIn" id="bluetooth_module">Bluetooth Module</h2>
+                        <div class="col-md-6">
+                            <img class="img-rounded img-responsive visible-fadeIn" src="images/VW_MIBI/UGZZC.png" width="100%" alt="image of the bluetooth module">
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="col-md-6">
+                            <table border="1" style="width:100%" align="center">
+                                <tr>
+                                    <td>Part Number</td>
+                                    <td>UGZZC 46D ALPS</td>
+                                </tr>
+                                <tr>
+                                    <td>Datasheet Link</td>
+                                    <td>link</td>
+                                </tr>
+                                <tr>
+                                    <td>Responsibility</td>
+                                    <td>Bluetooth Communications</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <p>
+                                This bluetooth module is rather big, but it does its job well. It has limited range, but
+                                as long as you are within the car, it performs like it should. Though... There are many
+                                modules out there today that could be a much better fit. VW.. why?
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- lc4064v5tn module -->
+                    <div class="row">
+                        <h2 class="visible-fadeIn" id="lc4064v5tn-75">lc4064v5tn-75 </h2>
+                        <div class="col-md-6">
+                            <img class="img-rounded img-responsive visible-fadeIn" src="images/VW_MIBI/lc4064v5tn-75.png" width="100%" alt="">
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="col-md-6">
+                            <table border="1" style="width:100%" align="center">
+                                <tr>
+                                    <td> Part Number</td>
+                                    <td> lc4064v5tn-75</td>
+                                </tr>
+                                <tr>
+                                    <td> Datasheet Link</td>
+                                    <td> link</td>
+                                </tr>
+                                <tr>
+                                    <td> Responsibility</td>
+                                    <td> Unknown - reprogrammable logic gate array</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <p>
+                                This is one of the most intriguing parts in this system. It is a reprogrammable gate array.
+                                In other words, you can create any logical circuit you want (within the gate limit). This
+                                allows the user to implement custom "hardware" and on top of that it can be "reprogrammed"
+                                on the fly. This could allow for implementation of a specific algorithm.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- R8A77770 module -->
+                    <div class="row">
+                        <h2 class="visible-fadeIn" id="R8A77770">R8A77770</h2>
+                        <div class="col-md-6">
+                            <img class="img-rounded img-responsive visible-fadeIn" src="images/VW_MIBI/R8A77770.png" width="100%" alt="">
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="col-md-6">
+                            <table border="1" style="width:100%" align="center">
+                                <tr>
+                                    <td> Part Number</td>
+                                    <td> R8A77770 A02B8</td>
+                                </tr>
+                                <tr>
+                                    <td> Datasheet Link</td>
+                                    <td> link</td>
+                                </tr>
+                                <tr>
+                                    <td> Responsibility</td>
+                                    <td> Main chip running QNX</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <p>
+                                The main chip.. a big BGA running QNX.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <p>This project is ongoing in my spare time. </p>
+                    <p class="visible-fadeIn"></p>
+                    <p class="visible-fadeIn"></p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+</html>
